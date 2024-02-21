@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shadow Fight Handbook</string>
+    <string name="welcome_text">Добро пожаловать!</string>
+
+    <string name="text_lore">Сюжет</string>
+    <string name="text_missions">Задания</string>
+    <string name="text_equipment">Экипировка</string>
+    <string name="text_settings">Настройки</string>
+
+    <string name="dynastyIconMain">DynastyIcon</string>
+    <string name="slidersIcon">SliderIcon</string>
+    <string name="categoryIcon">CategoryIcon</string>
+    <string name="arbiterSetIcon">arbiterSetIcon</string>
+    <string name="setPageIcon">setPageIcon</string>
+
+    <string name="text_secTitle">Экипировка</string>
+
+    <string name="equipFaction">Фракция</string>
+    <string name="equipChapter">Глава</string>
+
+    <string name="setDescrition">Сет Судей Купола, вершащих приговоры Пустой комнаты</string>
+</resources>

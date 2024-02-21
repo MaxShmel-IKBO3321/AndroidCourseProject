@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginEnd="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/equipBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/equipImage"
+                android:layout_width="259dp"
+                android:layout_height="243dp"
+                android:contentDescription="@string/arbiterSetIcon"
+                app:srcCompat="@drawable/arbiter"/>
+            
+            <TextView
+                android:id="@+id/equipTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/basic_button_text"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:layout_margin="10dp">
+
+            </TextView>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equipFaction"
+                    android:textColor="@color/basic_button_text"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/equipChapter"
+                    android:textColor="@color/basic_button_text"
+                    android:textSize="14sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/equipFaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/basic_button_text"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/equipChapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/app_name"
+                    android:textColor="@color/basic_button_text"
+                    android:textSize="14sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

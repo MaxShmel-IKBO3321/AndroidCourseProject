@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.64">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="0sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="30sp"
+            android:backgroundTint="@color/basic_button_color"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="startSecAct"
+            android:text="@string/text_equipment"
+            android:textColor="@color/basic_button_text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="30sp"
+            android:backgroundTint="@color/basic_button_color"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="btnClick"
+            android:text="@string/text_lore"
+            android:textColor="@color/basic_button_text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="@color/basic_button_color"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="btnClick"
+            android:text="@string/text_missions"
+            android:textColor="@color/basic_button_text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="20sp"
+            android:backgroundTint="@color/basic_button_color"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="btnClick"
+            android:text="@string/text_settings"
+            android:textColor="@color/basic_button_text"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="226dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/dynastyIconMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dynasty" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="173dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/welcome_text"
+        android:textColor="@color/basic_text"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
